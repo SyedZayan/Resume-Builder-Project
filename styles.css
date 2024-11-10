@@ -1,0 +1,229 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f7fb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    padding: 25px;
+    margin: 20px;
+}
+
+.centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.2rem;
+    color: #00695c;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #b2dfdb;
+    padding-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    color: white;
+    background-color: #00897b;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #00695c;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Resume display styling */
+.resume-container {
+    width: 210mm;
+    min-height: 297mm;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 0;
+    border-radius: 8px;
+    margin: 20px auto;
+    display: flex;
+}
+
+.resume-content {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+
+/* Sidebar styling */
+.sidebar {
+    width: 30%;
+    background-color: #3a4f63;
+    color: white;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.sidebar img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    display: block;
+    border: 3px solid #b2dfdb;
+}
+
+.sidebar h2 {
+    font-size: 1.1rem;
+    color: #b2dfdb;
+    margin-bottom: 10px;
+}
+
+.sidebar p, .sidebar ul {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #e0f7fa;
+    margin-bottom: 15px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/* Main content styling */
+.main-content {
+    width: 70%;
+    padding: 40px 30px;
+    color: #37474f;
+}
+
+.main-content h1 {
+    font-size: 2.2rem;
+    color: #00695c;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.main-content .title {
+    font-size: 1.3rem;
+    color: #455a64;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+.main-content .summary {
+    font-size: 1rem;
+    color: #5f6368;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.main-content h2 {
+    font-size: 1.4rem;
+    color: #00695c;
+    border-bottom: 2px solid #b2dfdb;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.main-content p, .main-content ul {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #37474f;
+}
+
+/* Resume action buttons */
+.resume-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.resume-buttons button {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#editResume {
+    background-color: #4CAF50;
+}
+
+#downloadResume {
+    background-color: #00897b;
+}
+
+#shareResume {
+    background-color: #007BFF;
+}
+
+#editResume:hover {
+    background-color: #388E3C;
+}
+
+#downloadResume:hover {
+    background-color: #00695c;
+}
+
+#shareResume:hover {
+    background-color: #0056b3;
+}
+
+/* Hide buttons during print */
+@media print {
+    .resume-buttons {
+        display: none;
+    }
+    .resume-container {
+        page-break-after: always;
+    }
+}
